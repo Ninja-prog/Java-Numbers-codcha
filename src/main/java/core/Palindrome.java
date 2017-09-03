@@ -3,10 +3,12 @@
 package core;
 import java.util.Scanner;
 public class Palindrome {
+	
 	public static void main(String[] args) {
 	System.out.print("Enter a number: ");
 	Scanner input = new Scanner (System.in);
 	int number = input.nextInt(); input.close();
+	
 	int reverse = 0 ;
 	int origin = number;
 	while (number > 0) {

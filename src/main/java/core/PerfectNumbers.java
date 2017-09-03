@@ -19,7 +19,7 @@ public class PerfectNumbers {
             input.nextInt(); input.close();
             System.out.print("Perfect numbers are: ");
            
-            int max = 10_000;
+            int max = 10000;
             for (int i = 1; i <= max; i++) {
                   if (isPerfectNumber(i)) {System.out.print(i + ", ");}}
     	}

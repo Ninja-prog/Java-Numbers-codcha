@@ -2,10 +2,11 @@
 package core;
 import java.util.*;
 public class ConsecutiveOrNot {
-	public static boolean isConsecutive(int...number) {
+	public static boolean isConsecutive(int...numbers) {
+		for(int i = 0; i < numbers.length - 1; i++) {
 		if(numbers[i] < numbers[i + 1]) {if (numbers[i] + 1 != numbers[i + 1]) {return false;}}
 		else if(numbers[i] > numbers[i + 1]) {if (numbers[i] - 1 != numbers[i + 1]) {return false;}}
-	 return true;}
+		} return true;}
 
 public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
